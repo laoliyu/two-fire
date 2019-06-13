@@ -1,0 +1,25 @@
+<!-- pages/user-grade/user-grade.wxml -->
+<view class="main">
+  <view class="header">
+    <open-data type="userAvatarUrl" class="userAvatar"></open-data>
+    <view class="hd-body">
+      <open-data type="userNickName" class="nickName"></open-data>
+      <view class="userTel">绑定手机号</view>
+    </view>
+    <view class="grade">
+      <text class="gradeNum">{{grade}}</text>
+      积分
+    </view>
+  </view>
+  <view class="footer">
+    <view class="ft ft1">
+      <image src="../../images/grade-duihuan.png" />
+      <text>兑换记录</text>
+    </view>
+    <view class="ft">
+      <image src="../../images/grade-jifen.png" />
+      <text>积分明细</text>
+    </view>
+  </view>
+  <image src="../../images/user-tel.png" class='editTel' bindtap="editTel"/>
+</view>

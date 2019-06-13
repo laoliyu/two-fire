@@ -1,0 +1,125 @@
+/* pages/index/index.wxss */
+page{
+  background: #202021;
+  color: #ffffff;
+}
+input{
+  background-color: #2F2F32;
+  height: 30px;
+  width: 80%;
+  margin-left:10px ;
+  border-radius: 10px;
+  text-align: center;
+}
+.sou{
+  overflow: hidden;
+  position: relative;
+}
+.sou .mage1{
+ position: absolute;
+ height: 15px;
+ width: 15px;
+ z-index: 10;
+ left: 23px;
+ top: 9px;
+}
+.sou .mage2{
+ position: relative;
+ height: 27px;
+ width: 34px;
+ z-index: 10;
+  left: 321px;
+ top: -28px;
+}
+.vant{
+  position: relative;
+  top: -18px;
+  color: #ABABAB;
+}
+.vant {
+  display: flex
+}
+.vant .title1{
+  flex: 1;
+  text-align: center
+}
+.vant .title2{
+  flex: 1;
+  text-align: center;
+  
+}
+.store .store-url{
+  width: 86px;
+  height: 86px;
+  border-radius: 2rpx;
+  display: block;
+  float: left;
+  margin-left: 10px;
+  /* border-bottom: 1px solid #493F3D; */
+}
+.store .title{
+  display: block;
+  margin-left: 104px;
+margin-bottom: 10px;
+}
+.store .adress{
+  color: #8C8B8B;
+  display: block;
+   margin-left: 104px;
+   font-size: 14px;
+}
+.content{
+  position: relative;
+  background: #474747;
+  overflow: hidden;
+  padding:10px 0; 
+   border-bottom: 1px solid #493F3D;
+}
+.store{
+  overflow: hidden;
+}
+.store .zhe{
+  color: #E3454F;
+  display: block;
+  float: right;
+  margin-right: 10px;
+}
+.store .long{
+  color: #959495;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+  font-size: 12px;
+}
+/* 弹出库 */
+.search-foot{
+ overflow: hidden;
+  
+  position: absolute;
+  color: #ffffff;
+  z-index: 1000;
+  background: #262626;
+  widows: 100%;
+  height: 300px;
+}
+ .foot{
+  border: 1px solid #ddd;
+  display: block;
+border-radius: 4px;
+  padding: 10px 30px;
+  float: left;
+  margin-left: 12px;
+  
+}
+.butt{
+  margin-top: 251px;
+  display: flex;
+}
+.cancel{
+  flex: 1;
+  text-align: center
+}
+.consfirm{
+flex: 1;
+  text-align: center
+}

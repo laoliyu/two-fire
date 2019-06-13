@@ -1,0 +1,88 @@
+<!-- pages/user/user.wxml -->
+<view class="page">
+  <!-- 头部 -->
+  <image src='../../images/user-arrowL.png' class='left'></image>
+  <image src='../../images/user-arrowR.png' class='right'></image>
+  <image src="../../images/user-tel.png" class='zhong' bindtap='phone' hidden='{{flag}}' />
+  <view class="user-header">
+    <!-- <image src="../../images/user-arrowL.png" class="arrowL"/> -->
+    <view class="userClass">
+      <image src="../../images/user-class.png" class="classImg" />
+      <text class="classText">当前等级</text>
+      <view class="curClass">V0平民</view>
+    </view>
+    <view class="userMsg">
+      <view class='avatar'>
+        <open-data type="userAvatarUrl" class="userAvatar"></open-data>
+      </view>
+      <open-data type="userNickName" class="nickName"></open-data>
+      <view class="userTel">{{flag ? 'phone' :"立即绑定手机号"}}</view>
+    </view>
+    <view class="userGrade">
+      <image src="../../images/user-grade.png" class="classImg" />
+      <text class="classText">当前积分</text>
+      <view class="curClass">0</view>
+    </view>
+  </view>
+
+<!-- 列表栏 -->
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_access weui-cell_example" bindtap="huiyuanka" data-value="会员卡">
+      <view class="weui-cell__hd">
+        <image src="../../images/huiyuan.png" style="height:28px;width: 28px;margin-right:16px;display:block"></image>
+        <image src="../../images/arrowR.png" class='arrowR' style="height:25px;width: 25px;display:block; margin-right:50px;" ></image>
+      </view>
+      <view class="weui-cell__bd">
+        <p>我的会员卡</p>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_access weui-cell_example" bindtap="huiyuanka" data-value="优惠券">
+      <view class="weui-cell__hd">
+        <image src="../../images/youhui.png" style="height:28px;width: 28px;margin-right:16px;display:block"></image>
+        <image src="../../images/arrowR.png" class='arrowR' style="height:25px;width: 25px;display:block; margin-right:50px;" ></image>
+      </view>
+      <view class="weui-cell__bd">
+        <p>我的优惠券</p>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_access weui-cell_example" bindtap="huiyuanka" data-value="订单">
+      <view class="weui-cell__hd">
+        <image src="../../images/dingdan.png" style="height:28px;width: 28px;margin-right:16px;display:block"></image>
+        <image src="../../images/arrowR.png" class='arrowR' style="height:25px;width: 25px;display:block; margin-right:50px;" ></image>
+      </view>
+      <view class="weui-cell__bd">
+        <p>我的订单</p>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_access weui-cell_example" bindtap="huiyuanka" data-value="收货地址">
+      <view class="weui-cell__hd">
+        <image src="../../images/shouhuodizhi.png" style="height:28px;width: 28px;margin-right:16px;display:block"></image>
+        <image src="../../images/arrowR.png" class='arrowR' style="height:25px;width: 25px;display:block; margin-right:50px;" ></image>
+      </view>
+      <view class="weui-cell__bd">
+        <p>收货地址管理</p>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_access weui-cell_example" bindtap="gradeStore">
+      <view class="weui-cell__hd">
+        <image src="../../images/huodong.png" style="height:28px;width: 28px;margin-right:16px;display:block"></image>
+        <image src="../../images/arrowR.png" class='arrowR' style="height:25px;width: 25px;display:block; margin-right:50px;" ></image>
+      </view>
+      <view class="weui-cell__bd">
+        <p>商家活动</p>
+      </view>
+      <view class="weui-cell__ft">积分商城</view>
+    </view>
+    <view class="weui-cell weui-cell_access weui-cell_example" >
+      <view class="weui-cell__hd">
+        <image src="../../images/gerenxinxi.png" style="height:28px;width: 28px;margin-right:16px;display:block"></image>
+        <image src="../../images/arrowR.png" class='arrowR' style="height:25px;width: 25px;display:block; margin-right:50px;" ></image>
+      </view>
+      <view class="weui-cell__bd">
+        <p>个人信息</p>
+      </view>
+      <view class="weui-cell__ft">未设置</view>
+    </view>
+    
+  </view>
+</view>

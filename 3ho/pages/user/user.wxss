@@ -1,0 +1,97 @@
+/* pages/user/user.wxss */
+@import '../../css/weui.wxss';
+
+.weui-cells{
+  margin-top: 0;
+  line-height: 34px;
+}
+.weui-cell__ft {
+  position: absolute;
+  right: 42px;
+}
+.arrowR {
+  position: absolute;
+  top: 15px;
+  right: -36px;
+}
+page{
+  width: 100%;
+  background: #ece4dd;
+  
+  /* background:#b2b760; */
+}
+.left{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 65px;
+  left: 6px;
+}
+.right{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 65px;
+  right: 6px;
+}
+.zhong{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: 62%;
+  top: 124px;
+}
+.user-header{
+  display: flex;
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+}
+.userClass, .userMsg , .userGrade{
+  flex:1;
+  margin-top: 40px;
+}
+.classImg{
+  height: 20px;
+  width: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.classText{
+  font-size: 14px;
+  color: #918c72;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.curClass{
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+.userMsg .avatar{
+  margin: 0 auto;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+.userMsg open-data{
+  display: block;
+  text-align: center;
+}
+.userMsg .userTel{
+  font-size: 12px;
+  text-align: center;
+}
+/* .userMsg .userTel image{
+  height: 12px;
+  width: 12px;
+} */
+.userAvatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  overflow: hidden;
+}

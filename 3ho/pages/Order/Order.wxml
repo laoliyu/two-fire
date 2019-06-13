@@ -1,0 +1,14 @@
+<view class="header">
+  <view class="backButton">
+    <button type="button" class="back" bindtap="back">← 返回</button>
+    <view class="menu">
+      <view class="Hall" bindtap="HallOrder" data-type="1">堂食单</view>
+      <view class="line"></view>
+      <view class="TakeOut" bindtap="TakeOutOrder" data-type="2">外卖单</view>
+    </view>
+  </view>
+</view>
+<view class="content">
+  <image class="image" src="../../images/Order1.jpg"/>
+  <view class="text">没有找到任何订单</view>
+</view>

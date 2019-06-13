@@ -1,0 +1,5 @@
+<!--pages/user-info/user-info.wxml-->
+<view class='main'>
+  <image src='../../images/user-info.jpeg'></image>
+  <text>抱歉，您还没有任何{{value}}</text>
+</view>

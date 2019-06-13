@@ -1,0 +1,30 @@
+<view class='sou'>
+
+  <image src='/images/sou.png' class='mage1'></image>
+  <input placeholder='请输入店名' bindtap='searchFoot'></input>
+  <image src='/images/ding.png' class='mage2' bindtap='map'></image>
+</view>
+<view class='vant'>
+  <text class='title1' bindtap='chance'>美食类型</text>
+  <text class='title2' bindtap='chance'>筛选</text>
+</view>
+
+ <view class='search-foot' hidden='{{flag}}'>
+            <text class='foot'>海鲜</text>
+            <text class='foot'>自助</text>
+            <text class='foot'>火锅</text>
+            <view class='butt'>
+              <view class='cancel' bindtap='concel'>取消</view>
+              <view class='consfirm' bindtap='consfrim'>确定</view>
+            </view>
+  </view>
+
+<view class='content' bindtap='detail' wx:for="{{data}}">
+  <view class='store'>
+    <image class='store-url' src='{{item.url}}'></image>
+    <text class='long'>{{item.kan}}</text>
+    <text class='title'>{{item.name}}</text>
+    <text class='adress'>{{item.address}}</text>
+    <text class='zhe'>{{item.zhe}}</text>
+  </view>
+</view>

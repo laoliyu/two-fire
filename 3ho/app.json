@@ -1,0 +1,60 @@
+{
+  "pages": [
+  "pages/index/index",
+    "pages/Line-up1/Line-up1",
+    "pages/Order/Order",
+    "pages/Member/Member",
+    "pages/Order2/Order2",
+    "pages/Take-out/Take-out",
+    "pages/map/map",
+    "pages/menu/menu",
+    "pages/Line-up/Line-up",
+    "pages/user-info/user-info",
+    "pages/user-grade/user-grade",
+    "pages/user/user"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "二维火点餐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/Take-out/Take-out",
+        "text": "外卖",
+        "iconPath": "images/TabBar/waimai.png",
+        "selectedIconPath": "images/TabBar/waimai.png"
+      },
+      {
+        "pagePath": "pages/Line-up/Line-up",
+        "text": "排队",
+        "iconPath": "images/TabBar/paidui.png",
+        "selectedIconPath": "images/TabBar/paidui.png"
+      },
+      {
+        "pagePath": "pages/Order/Order",
+        "text": "订单",
+        "iconPath": "images/TabBar/dingdan.png",
+        "selectedIconPath": "images/TabBar/dingdan.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "会员中心",
+        "iconPath": "images/TabBar/huiyuan.png",
+        "selectedIconPath": "images/TabBar/huiyuan.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "color": "#000",
+    "selectedColor": "#0286f1"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

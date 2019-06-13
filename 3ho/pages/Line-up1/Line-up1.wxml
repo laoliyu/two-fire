@@ -1,0 +1,20 @@
+
+  <view class="header">
+    <view class="title">
+      <image src="../../images/title.png" />
+    </view>
+  </view>
+    <view class="content">
+      <view class="people">请选择正确的用餐人数：</view>
+      <view class="search-keyword">
+        <view wx:for="{{hotKeyword}}" wx:for-item="hotKeywordItem" wx:key="hotKeywordItem" class="search-keyword-item" data-keyword="{{hotKeywordItem}}" bindtap="searchByKeyword">
+          {{hotKeywordItem}}
+        </view>
+      </view>
+  </view>
+  <view class="footer">
+    <view class="button">
+    <view class="cancel" bindtap='cancel'>取消</view>
+    <view class="define" bindtap='confirme'>确定</view>
+    </view>
+  </view>

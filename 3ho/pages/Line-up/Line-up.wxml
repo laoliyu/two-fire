@@ -1,0 +1,49 @@
+<view class="header">
+  <view class="back-button">
+    <button type="button" class="back" bindtap="back">＜ 返回</button>
+  </view>
+</view>
+<view class='flow'>
+  <view class="content">
+    <view class="table">
+      <view class="title">
+        <td class="th1">桌面类型</td>
+        <td class="th2">等待桌数</td>
+        <td class="th3">预计等待时间</td>
+      </view>
+      <view class="message">
+        <view class="message1">
+          <tr class="tr1">小桌</tr>
+          <tr class="tr3">0</tr>
+          <tr class="tr4">桌</tr>
+          <tr class="tr5">约10分钟</tr>
+          <view class="tr2">1~2人</view>
+        </view>
+        <view class="message2">
+          <tr class="tr1">中桌</tr>
+          <tr class="tr3">0</tr>
+          <tr class="tr4">桌</tr>
+          <tr class="tr5">约10分钟</tr>
+          <view class="tr2">3~4人</view>
+        </view>
+        <view class="message3">
+          <tr class="tr1">大桌</tr>
+          <tr class="tr3">0</tr>
+          <tr class="tr4">桌</tr>
+          <tr class="tr5">约10分钟</tr>
+          <view class="tr2">1~2人</view>
+        </view>
+        <view class="message4">
+          <tr class="tr1">超大桌</tr>
+          <tr class="tr3">0</tr>
+          <tr class="tr4">桌</tr>
+          <tr class="tr5">约10分钟</tr>
+          <view class="tr2">1~2人</view>
+        </view>
+      </view>
+    </view>
+    <view class="order-number">
+      <button class="number" bindtap="takeNumber">立即取号</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,78 @@
+page{
+  background: #dad0d3;
+}
+.header{
+  width: 100%;
+  height: 50px;
+  
+}
+.content{
+  width: 100%;
+  height: 100%;
+}
+.header .title image{
+  width: 200px;
+  height: 50px;
+  margin-left: 60px;
+}
+.people{
+  color:#b73636;
+  font-size: 20px;
+  text-align: center;
+}
+.search-keyword {
+width: 95%;
+  height: 30px;
+  padding: 30rpx;
+}
+.search-keyword view{
+  width: 50px;
+  height: 20px;
+  margin: 5px;
+
+}
+.search-keyword-item {
+  display: inline-flex;
+  padding: 10rpx;
+  border: 1px solid #b0b0b0;
+  border-radius: 15rpx;
+  background-color: #fbfbfb;
+  margin: 10rpx 10rpx;
+  color: #b0b0b0;
+  
+  overflow: hidden;
+  justify-content: center;
+}
+.footer{
+position: absolute;
+bottom: 0;
+overflow: hidden;
+width: 100%;
+}
+.cancel{
+ display: block;
+  float: left;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  background: #434344;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border: 2px solid #ffff;
+}
+.define{
+  float: right;
+   border-radius: 100%;
+
+   height: 50px;
+  width: 50px;
+  background: red;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+   border: 2px solid #ffff;
+}
+

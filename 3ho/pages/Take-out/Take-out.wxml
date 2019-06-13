@@ -1,0 +1,114 @@
+<!-- pages/Take-out/Take-out.wxml -->
+<view class='page'>
+    <!-- 欢迎光临 -->
+    <view class='page-header'>
+        <view class="header-title">欢迎光临</view>
+        <view class="header-picture">
+            <view class="picture-left">
+                <image src="../../images/shop.jpg" />
+                <view class="pic-title">V教咖啡</view>
+                <span class="picture-price">55元以下</span>
+                <span class="pic-all">综合</span>
+            </view>
+            <view class="picture-right">
+                <image src="../../images/heart.png" />
+            </view>
+            <view class="header-foot">
+                <view class="address"bindtap="map">
+            <image src="../../images/ad.png" />
+                    <span class="dcr">教工楼第一楼55号</span>
+                </view>
+                <view class="address-iphone">
+                    <image src="../../images/phone.png" />
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 本店美食 -->
+    <view class='page-food'>
+        <view class="food-title">本店美食</view>
+        <view class="food-content">
+            <view class="content-picture">
+                <view class="picture1">
+                    <image src="../../images/coffee.jpg" />
+                    <view class="pic pic-name">海盐冰激凌拿铁</view>
+                    <view class="pic pic-price">￥22.00</view>
+                </view>
+                <view class="picture2">
+                    <view class="pic-left float" >
+                        <image src="../../images/fruit.jpg" />
+                        <view class="pic pic-name">新鲜水果茶</view>
+                        <view class="pic pic-price">￥20.00</view>
+                    </view>
+                    <view class="pic-right float">
+                        <image src="../../images/oats.jpg" />
+                        <view class="pic pic-name">黑米燕麦</view>
+                        <view class="pic pic-price">￥20.00</view>
+                    </view>
+                </view>
+                <view class="picture3">
+                    <view class="pic-left float">
+                        <image src="../../images/sesame.jpg" />
+                        <view class="pic pic-name">黑芝麻五谷</view>
+                        <view class="pic pic-price">￥20.00</view>
+                    </view>
+                    <view class="pic-right float">
+                        <image src="../../images/oats.jpg" />
+                        <view class="pic pic-name">燕麦米浆</view>
+                        <view class="pic pic-price">￥20.00</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="food-menu">
+            <button class="menu"bindtap="menu">进入菜单</button>
+        </view>
+    </view>
+    <!-- 店铺详情 -->
+    <view class='page-detail'>
+        <view class="detail-title">店铺详情</view>
+        <view class="detail-pic">
+            <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='3000' duration='1000' circular='true'>
+                <block wx:for="{{bnrUrl}}" wx:for-index="index"wx:key="{{index}}">
+                    <swiper-item>
+                        <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class="detail-decr">
+            ( 本店可以微信支付。) 咖啡，可以陪伴你度过许多惬意的时光。闲暇里饮一杯咖啡、几块蛋糕，
+        和朋友聊天小聚。丰富着生活，也缩短了你我之间的距离。美餐之后，来一杯咖啡，读一份报纸，
+        或是和恋人、朋友及家人在一起共享温馨。v咖啡，全打造无纸化餐厅。扫描点单、微信支付。
+        </view>
+        <view class="dao time">
+            <text class='iconfont icon-shijian' style='color:#7F8389;font-size:60rpx;'></text>
+            <span class="decr">营业时间</span>
+            <span class="decr-rt">自定义时间</span>
+        </view>
+        <view class="dao ad">
+            <text class='iconfont icon-ccgl-dizhichaxun-8' style='color:#7F8389;font-size:60rpx;'></text>
+            <span class="decr">店铺地址</span>
+            <span class="decr-rt">教工楼552号一楼></span>
+        </view>
+        <view class="dao call">
+            <text class='iconfont icon-weibiaoti' style='color:#7F8389;font-size:60rpx;'></text>
+            <span class="decr">联系电话</span>
+            <span class="decr-rt">15968178410></span>
+        </view>
+        <view class=" tap">
+            <text class='iconfont icon-theme-s' style='color:#7F8389;font-size:60rpx;'></text>
+            <span class="decr">特色标签</span>
+            <view class="search-keyword">
+                <view wx:for="{{hotKeyword}}" wx:for-item="hotKeywordItem" wx:key="hotKeywordItem" class="search-keyword-item" data-keyword="{{hotKeywordItem}}" bindtap="searchByKeyword">
+                    {{hotKeywordItem}}
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 吃货评价 -->
+    <view class='page-appraise'>
+        <view class="appraise-title">吃货评价</view>
+    </view>
+</view>
+    
